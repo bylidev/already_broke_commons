@@ -2,7 +2,7 @@ package dev.byli.commons;
 
 import java.util.UUID;
 
-public class Ticker {
+public class TickerPair {
     private UUID tickerId;
     private String ticker;
     private String pair;
