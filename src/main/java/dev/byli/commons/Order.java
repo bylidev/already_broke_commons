@@ -5,6 +5,8 @@ import java.util.Date;
 import java.util.UUID;
 
 public class Order {
+
+    private UUID tickerId;
     private UUID tickerPairId;
     private OrderStatus status;
     private OrderType type;
