@@ -14,6 +14,14 @@ public class Order {
     private BigDecimal amount;
     private Date createdAt;
 
+    public UUID getTickerId() {
+        return tickerId;
+    }
+
+    public void setTickerId(UUID tickerId) {
+        this.tickerId = tickerId;
+    }
+
     public BigDecimal getAmount() {
         return amount;
     }
