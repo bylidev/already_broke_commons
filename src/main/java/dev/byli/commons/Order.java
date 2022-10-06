@@ -1,7 +1,7 @@
 package dev.byli.commons;
 
 import java.math.BigDecimal;
-import java.time.LocalDate;
+import java.util.Date;
 import java.util.UUID;
 
 public class Order {
@@ -10,7 +10,7 @@ public class Order {
     private OrderType type;
 
     private BigDecimal amount;
-    private LocalDate createdAt;
+    private Date createdAt;
 
     public BigDecimal getAmount() {
         return amount;
@@ -44,11 +44,11 @@ public class Order {
         this.type = type;
     }
 
-    public LocalDate getCreatedAt() {
+    public Date getCreatedAt() {
         return createdAt;
     }
 
-    public void setCreatedAt(LocalDate createdAt) {
+    public void setCreatedAt(Date createdAt) {
         this.createdAt = createdAt;
     }
 }
