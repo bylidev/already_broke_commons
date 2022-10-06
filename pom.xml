@@ -4,6 +4,10 @@
   <groupId>dev.byli.commons</groupId>
   <artifactId>already_broke_commons</artifactId>
   <version>1.0.0</version>
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
     <build>
         <plugins>
             <plugin>

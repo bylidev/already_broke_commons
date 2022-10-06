@@ -1,12 +1,24 @@
-package main.dev.byli.commons;
+package dev.byli.commons;
 
+import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.util.UUID;
 
 public class Order {
     private UUID tickerPairId;
     private OrderStatus status;
     private OrderType type;
+
+    private BigDecimal amount;
     private LocalDate createdAt;
+
+    public BigDecimal getAmount() {
+        return amount;
+    }
+
+    public void setAmount(BigDecimal amount) {
+        this.amount = amount;
+    }
 
     public UUID getTickerPairId() {
         return tickerPairId;

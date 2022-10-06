@@ -1,4 +1,4 @@
-package main.dev.byli.commons;
+package dev.byli.commons;
 
 public enum OrderStatus {
     PENDING,
