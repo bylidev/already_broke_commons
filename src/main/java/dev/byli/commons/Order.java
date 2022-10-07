@@ -8,8 +8,9 @@ public class Order {
     private TickerPair tickerPair;
     private OrderStatus status;
     private OrderType type;
-
     private BigDecimal amount;
+
+    private String orderId;
     private Date createdAt;
 
     public TickerPair getTickerPair() {
@@ -50,5 +51,13 @@ public class Order {
 
     public void setCreatedAt(Date createdAt) {
         this.createdAt = createdAt;
+    }
+
+    public String getOrderId() {
+        return orderId;
+    }
+
+    public void setOrderId(String orderId) {
+        this.orderId = orderId;
     }
 }
