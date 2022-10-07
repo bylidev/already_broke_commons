@@ -3,16 +3,16 @@ package dev.byli.commons;
 import java.util.UUID;
 
 public class TickerPair {
-    private UUID tickerPairId;
+    private UUID id;
     private Ticker ticker;
-    private Ticker pair;
+    private Ticker tickerPair;
 
-    public UUID getTickerPairId() {
-        return tickerPairId;
+    public UUID getId() {
+        return id;
     }
 
-    public void setTickerPairId(UUID tickerPairId) {
-        this.tickerPairId = tickerPairId;
+    public void setId(UUID id) {
+        this.id = id;
     }
 
     public Ticker getTicker() {
@@ -23,11 +23,11 @@ public class TickerPair {
         this.ticker = ticker;
     }
 
-    public Ticker getPair() {
-        return pair;
+    public Ticker getTickerPair() {
+        return tickerPair;
     }
 
-    public void setPair(Ticker pair) {
-        this.pair = pair;
+    public void setTickerPair(Ticker tickerPair) {
+        this.tickerPair = tickerPair;
     }
 }
