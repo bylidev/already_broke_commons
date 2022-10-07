@@ -4,6 +4,14 @@
   <groupId>dev.byli.commons</groupId>
   <artifactId>already_broke_commons</artifactId>
   <version>1.0.0-RELEASE</version>
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.24</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
