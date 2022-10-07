@@ -14,5 +14,4 @@ public class TickerRangeDataDto {
     private KindleRange range;
     private BigDecimal max;
     private BigDecimal min;
-    private BigDecimal current;
 }
