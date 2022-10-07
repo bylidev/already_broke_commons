@@ -2,40 +2,22 @@ package dev.byli.commons;
 
 import java.math.BigDecimal;
 import java.util.Date;
-import java.util.UUID;
 
 public class Order {
 
-    private UUID tickerId;
-    private UUID tickerPairId;
+    private TickerPair tickerPair;
     private OrderStatus status;
     private OrderType type;
 
     private BigDecimal amount;
     private Date createdAt;
 
-    public UUID getTickerId() {
-        return tickerId;
+    public TickerPair getTickerPair() {
+        return tickerPair;
     }
 
-    public void setTickerId(UUID tickerId) {
-        this.tickerId = tickerId;
-    }
-
-    public BigDecimal getAmount() {
-        return amount;
-    }
-
-    public void setAmount(BigDecimal amount) {
-        this.amount = amount;
-    }
-
-    public UUID getTickerPairId() {
-        return tickerPairId;
-    }
-
-    public void setTickerPairId(UUID tickerPairId) {
-        this.tickerPairId = tickerPairId;
+    public void setTickerPair(TickerPair tickerPair) {
+        this.tickerPair = tickerPair;
     }
 
     public OrderStatus getStatus() {
@@ -52,6 +34,14 @@ public class Order {
 
     public void setType(OrderType type) {
         this.type = type;
+    }
+
+    public BigDecimal getAmount() {
+        return amount;
+    }
+
+    public void setAmount(BigDecimal amount) {
+        this.amount = amount;
     }
 
     public Date getCreatedAt() {

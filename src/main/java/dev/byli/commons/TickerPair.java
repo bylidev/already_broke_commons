@@ -4,8 +4,8 @@ import java.util.UUID;
 
 public class TickerPair {
     private UUID tickerPairId;
-    private UUID tickerId;
-    private UUID pairId;
+    private Ticker tickerId;
+    private Ticker pairId;
 
     public UUID getTickerPairId() {
         return tickerPairId;
@@ -15,19 +15,19 @@ public class TickerPair {
         this.tickerPairId = tickerPairId;
     }
 
-    public UUID getTickerId() {
+    public Ticker getTickerId() {
         return tickerId;
     }
 
-    public void setTickerId(UUID tickerId) {
+    public void setTickerId(Ticker tickerId) {
         this.tickerId = tickerId;
     }
 
-    public UUID getPairId() {
+    public Ticker getPairId() {
         return pairId;
     }
 
-    public void setPairId(UUID pairId) {
+    public void setPairId(Ticker pairId) {
         this.pairId = pairId;
     }
 }
