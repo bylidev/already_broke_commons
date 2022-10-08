@@ -1,8 +1,6 @@
 package dev.byli.commons;
 
-import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
@@ -11,6 +9,8 @@ import java.util.UUID;
 @Builder
 @Getter
 @Setter
+@AllArgsConstructor
+@NoArgsConstructor
 public class Movement {
     private UUID id;
     private LocalDate createdAt;
