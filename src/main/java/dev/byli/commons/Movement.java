@@ -3,7 +3,7 @@ package dev.byli.commons;
 import lombok.*;
 
 import java.math.BigDecimal;
-import java.time.LocalDate;
+import java.util.Date;
 import java.util.UUID;
 
 @Builder
@@ -13,7 +13,7 @@ import java.util.UUID;
 @NoArgsConstructor
 public class Movement {
     private UUID id;
-    private LocalDate createdAt;
+    private Date createdAt;
     private BigDecimal amount;
     private MovementType MovementType;
 }
