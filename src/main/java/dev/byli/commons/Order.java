@@ -1,8 +1,14 @@
 package dev.byli.commons;
 
+import lombok.*;
+
 import java.math.BigDecimal;
 import java.util.Date;
-
+@Builder
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
 public class Order {
 
     private TickerPair tickerPair;

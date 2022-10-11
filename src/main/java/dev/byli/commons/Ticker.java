@@ -1,7 +1,13 @@
 package dev.byli.commons;
 
-import java.util.UUID;
+import lombok.*;
 
+import java.util.UUID;
+@Builder
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
 public class Ticker {
     private UUID id;
     private String name;

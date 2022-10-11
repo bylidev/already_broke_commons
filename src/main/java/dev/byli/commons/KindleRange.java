@@ -1,6 +1,5 @@
 package dev.byli.commons;
 
-
 public enum KindleRange {
 
     ONE_SECOND("1s"),
