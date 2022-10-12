@@ -16,4 +16,5 @@ public class Movement {
     private Date createdAt;
     private BigDecimal amount;
     private MovementType MovementType;
+    private OrderStatus orderStatus;
 }
