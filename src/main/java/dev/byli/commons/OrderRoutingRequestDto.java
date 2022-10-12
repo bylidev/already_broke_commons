@@ -14,4 +14,5 @@ public class OrderRoutingRequestDto {
     BigDecimal qty;
     BigDecimal limitPrice;
     OrderType side;
+    TickerPair tickerPair;
 }
