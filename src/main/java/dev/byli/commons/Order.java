@@ -4,6 +4,8 @@ import lombok.*;
 
 import java.math.BigDecimal;
 import java.util.Date;
+import java.util.UUID;
+
 @Builder
 @Getter
 @Setter
@@ -16,7 +18,7 @@ public class Order {
     private OrderType type;
     private BigDecimal amount;
 
-    private String orderId;
+    private UUID orderId;
     private Date createdAt;
 
     public TickerPair getTickerPair() {
@@ -59,11 +61,11 @@ public class Order {
         this.createdAt = createdAt;
     }
 
-    public String getOrderId() {
+    public UUID getOrderId() {
         return orderId;
     }
 
-    public void setOrderId(String orderId) {
+    public void setOrderId(UUID orderId) {
         this.orderId = orderId;
     }
 }
