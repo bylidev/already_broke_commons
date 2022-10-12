@@ -3,19 +3,15 @@ package dev.byli.commons;
 
 import lombok.*;
 
+import java.math.BigDecimal;
+
 @Setter
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
 public class OrderRoutingRequestDto {
-    Float qty;
-    Float price;
-    Boolean sellOperation;
-    Float fee;
-    Float totalUsd;
-    Float totalCrypto;
-    Long orderId;
-    Boolean completed=false;
-
+    BigDecimal qty;
+    BigDecimal limitPrice;
+    OrderType side;
 }
