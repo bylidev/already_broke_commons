@@ -20,6 +20,6 @@ public class OrderRoutingResponseDto {
     private OrderRoutingEnumStatus status;//:"FILLED",
     private String timeInForce;//:"GTC",
     private String type;//:"MARKET",
-    private OrderType side;//:"SELL"
+    private OrderSide side;//:"SELL"
 
 }
