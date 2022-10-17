@@ -2,13 +2,14 @@ package dev.byli.commons;
 
 import lombok.*;
 
+import java.io.Serializable;
 import java.util.UUID;
 @Builder
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class TickerPair {
+public class TickerPair implements Serializable {
     private UUID id;
     private Ticker ticker;
     private Ticker tickerPair;
