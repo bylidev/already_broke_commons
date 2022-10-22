@@ -21,7 +21,7 @@ public class Order implements Serializable {
     private BigDecimal qty;
     private BigDecimal price;
     private UUID orderId;
-    private String external_id;
+    private String externalId;
     private Date createdAt;
 
 
