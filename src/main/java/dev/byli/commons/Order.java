@@ -20,7 +20,7 @@ public class Order implements Serializable {
     private OrderSide side;
     private BigDecimal qty;
     private BigDecimal price;
-    private UUID orderId;
+    private String orderId;
     private String externalId;
     private Date createdAt;
 
